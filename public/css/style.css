@@ -59,12 +59,14 @@ main{
     width: 45%;
     background: #0A3871;
     border:2px solid #D8DFE8;
+    color: #FFFFFF;
 }
 
 .desencriptar{
     width: 45%;
     background: #D8DFE8;
     border:2px solid #0A3871;
+    color: #0A3871;
 }
 
 /* diseño del resultado del mensaje encriptado o desencriptado*/
