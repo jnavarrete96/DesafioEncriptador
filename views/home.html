@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header></header>
+    <main>
+        <section class="logo">
+            <img class="logo-Alura" src="../public/img/Logo.png" alt="Logo Alura">
+        </section>
+
+        <section class="seccion-central">
+            <div class="ingresar-texto">
+                <textarea  id="mensaje" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+            </div>
+            <div class="advertencia">
+                <p><i class="fa-solid fa-exclamation-circle"></i>&nbsp;Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
+            </div>     
+        </section>
+
+        <section class="texto-encriptado">
+            <div class=imagen-aviso>
+                <img src="../public/img/Muñeco.png" alt="imagen de mensaje no encontrado">
+            </div>
+            <div class="mensaje-aviso">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o deseencriptar.</p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
     
 </body>
 </html>

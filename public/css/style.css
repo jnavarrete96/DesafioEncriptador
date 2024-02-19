@@ -1,0 +1,104 @@
+body{
+    background: #f3f5fc;
+    width: 1400px;
+    margin: 40px;
+}
+
+main{
+    display: flex;
+    gap: 5.8%;
+}
+
+/*Sección donde se coloca mensaje para encriptar o desencriptar*/
+
+.seccion-central{
+    display: flex;
+    flex-direction: column;
+    margin-top: 88px;
+    font-family: "Inter", sans-serif;
+}
+.ingresar-texto{
+    background: #EFF1FA;
+    padding-top: 40px;
+}
+.ingresar-texto textarea{
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.ingresar-texto textarea::placeholder{
+    color: #0A3871;
+}
+
+.advertencia{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #495057;
+    padding: 4% 0;
+}
+
+.botones{
+    display: flex;
+    gap: 10%;
+}
+
+.encriptar,.desencriptar{
+    border-radius:1.6em;
+    font-size: 16px;
+    padding: 3% 7%;
+    text-align: center;
+    justify-content: center;
+}
+
+.encriptar{
+    width: 45%;
+    background: #0A3871;
+    border:2px solid #D8DFE8;
+}
+
+.desencriptar{
+    width: 45%;
+    background: #D8DFE8;
+    border:2px solid #0A3871;
+}
+
+/* diseño del resultado del mensaje encriptado o desencriptado*/
+.texto-encriptado{
+    background: #FFFFFF;
+    font-family: "Inter";
+}
+
+.imagen-aviso{
+    width: 90%;
+    padding: 20% 5%;
+}
+
+.mensaje-aviso{
+    display: flex;
+    flex-direction: column;
+}
+
+.mensaje-aviso p:first-child{
+    width: 84%;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-align: center;
+    color: #343A40;
+    padding: 4% 8% 0;
+}
+
+.mensaje-aviso p:last-child{
+    width: 84%;
+    padding: 4% 8% 8%;
+    font-size: 16px;
+    text-align: center;
+    color: #343A40;
+}
+
+
