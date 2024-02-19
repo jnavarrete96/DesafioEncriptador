@@ -70,6 +70,7 @@ main{
 /* diseño del resultado del mensaje encriptado o desencriptado*/
 .texto-encriptado{
     background: #FFFFFF;
+    border-radius: 2em;
     font-family: "Inter";
 }
 
