@@ -11,9 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <script src="../src/app.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1 class="titulo">Herramienta de Encriptación</h1>
+    </header>
     <main>
         <section class="logo">
             <img class="logo-Alura" src="../public/img/Logo.png" alt="Logo Alura">
@@ -27,8 +30,8 @@
                 <p><i class="fa-solid fa-exclamation-circle"></i>&nbsp;Sólo letras minúsculas y sin acentos</p>
             </div>
             <div class="botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button onclick="encriptarMensaje();" class="encriptar">Encriptar</button>
+                <button onclick="desencriptarMensaje();" class="desencriptar">Desencriptar</button>
             </div>     
         </section>
 
@@ -40,9 +43,16 @@
                 <p>Ningún mensaje fue encontrado</p>
                 <p>Ingresa el texto que desees encriptar o deseencriptar.</p>
             </div>
+            <div class="copiar">
+                <button id="boton-copiar" onclick="copiarMensaje();" style="display: none;">Copiar</button>
+                <p class="mensaje-copiado" style="display:none">texto copiado en el portapapeles</p>
+            </div>
+
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p class="copyright">&copy Desarrollado por Juan Pablo Navarrete</p>
+    </footer>
     
 </body>
 </html>

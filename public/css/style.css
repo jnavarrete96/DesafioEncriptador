@@ -1,8 +1,36 @@
 body{
     background: #f3f5fc;
     width: 1400px;
-    margin: 40px;
+    margin: 20px 0;
 }
+
+.titulo{
+    width: 1400px;
+    margin: 20px;
+    padding: 0 25%;
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    color: #0A3871;
+}
+
+/* Define la animación para la intermitencia */
+@keyframes titulo {
+    0% {
+      opacity: 0; /* La letra es invisible */
+    }
+    50% {
+      opacity: 1; /* La letra es visible */
+    }
+    100% {
+      opacity: 0; /* La letra es invisible nuevamente */
+    }
+  }
+  
+  /* Aplica la animación a la clase .intermittent */
+  .titulo {
+    animation: titulo 2s infinite; /* La animación dura 1.5 segundos y se repite infinitamente */
+  }
+
 
 main{
     display: flex;
@@ -10,11 +38,14 @@ main{
 }
 
 /*Sección donde se coloca mensaje para encriptar o desencriptar*/
-
+.logo{
+    width: 8.5%;
+}
 .seccion-central{
+    width: 40%;
     display: flex;
     flex-direction: column;
-    margin-top: 88px;
+    margin-top: 1%;
     font-family: "Inter", sans-serif;
 }
 .ingresar-texto{
@@ -48,25 +79,22 @@ main{
 }
 
 .encriptar,.desencriptar{
+    width: 45%;
     border-radius:1.6em;
     font-size: 16px;
     padding: 3% 7%;
     text-align: center;
     justify-content: center;
-}
-
-.encriptar{
-    width: 45%;
-    background: #0A3871;
-    border:2px solid #D8DFE8;
-    color: #FFFFFF;
-}
-
-.desencriptar{
-    width: 45%;
     background: #D8DFE8;
     border:2px solid #0A3871;
     color: #0A3871;
+    transition: 700ms all;
+}
+
+.encriptar:hover,.desencriptar:hover{
+    background: #0A3871;
+    border:2px solid #D8DFE8;
+    color: #FFFFFF;
 }
 
 /* diseño del resultado del mensaje encriptado o desencriptado*/
@@ -74,6 +102,8 @@ main{
     background: #FFFFFF;
     border-radius: 2em;
     font-family: "Inter";
+    width: 30%;
+    height: 92vh;
 }
 
 .imagen-aviso{
@@ -104,4 +134,61 @@ main{
     color: #343A40;
 }
 
+.copiar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+#boton-copiar{
+    width: 70%;
+    height: 9vh;
+    padding: 4% 0;
+    margin: 11% 15% 0;
+    border-radius:1.6em;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    background: #f3f5f8;
+    border:2px solid #0A3871;
+    color: #0A3871;
+    transition: 700ms all;
+}
+
+#boton-copiar:hover{
+    background: #0A3871;
+    border:2px solid #D8DFE8;
+    color: #FFFFFF;
+}
+
+/*elemento div del mensaje luego de encriptar o desencriptar*/
+#bloque-resultado-mensaje{
+    width: 100%;
+    padding: 17% 0 10%;
+    height: 50vh;
+    font-family: "Inter", sans-serif;
+}
+
+#resultado-mensaje{
+    width: 90%;
+    padding: 4% 4%;
+    font-size: 32px;
+    text-align: center;
+    color: #343A40;
+}
+
+.mensaje-copiado{
+    width: 70%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #495057;
+    padding: 2% 10% 4% 20%;
+}
+
+.copyright{
+    margin: 2% 0 0;
+    padding: 0 36%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #0A3871;
+}
