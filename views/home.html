@@ -18,21 +18,23 @@
         <h1 class="titulo">Herramienta de Encriptación</h1>
     </header>
     <main>
-        <section class="logo">
-            <img class="logo-Alura" src="../public/img/Logo.png" alt="Logo Alura">
-        </section>
-
-        <section class="seccion-central">
-            <div class="ingresar-texto">
-                <textarea  id="mensaje" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+        <section class="parte-principal">
+            <div class="logo">
+                <img class="logo-Alura" src="../public/img/Logo.png" alt="Logo Alura">
             </div>
-            <div class="advertencia">
-                <p><i class="fa-solid fa-exclamation-circle"></i>&nbsp;Sólo letras minúsculas y sin acentos</p>
+    
+            <div class="seccion-central">
+                <div class="ingresar-texto">
+                    <textarea  id="mensaje" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+                </div>
+                <div class="advertencia">
+                    <p><i class="fa-solid fa-exclamation-circle"></i>&nbsp;Sólo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptarMensaje();" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptarMensaje();" class="desencriptar">Desencriptar</button>
+                </div>     
             </div>
-            <div class="botones">
-                <button onclick="encriptarMensaje();" class="encriptar">Encriptar</button>
-                <button onclick="desencriptarMensaje();" class="desencriptar">Desencriptar</button>
-            </div>     
         </section>
 
         <section class="texto-encriptado">

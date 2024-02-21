@@ -5,7 +5,6 @@ body{
 }
 
 .titulo{
-    width: 1400px;
     margin: 20px;
     padding: 0 25%;
     font-family: "Inter", sans-serif;
@@ -34,15 +33,26 @@ body{
 
 main{
     display: flex;
-    gap: 5.8%;
+    gap: 5%;
 }
 
 /*Sección donde se coloca mensaje para encriptar o desencriptar*/
+
+.parte-principal{
+    display: flex;
+    width: 60%;
+    gap:5%;
+}
+
 .logo{
-    width: 8.5%;
+    width: 14%;
+}
+
+.logo-Alura{
+    width: 100%;
 }
 .seccion-central{
-    width: 40%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     margin-top: 1%;
@@ -103,12 +113,16 @@ main{
     border-radius: 2em;
     font-family: "Inter";
     width: 30%;
-    height: 92vh;
+    height: 98vh;
 }
 
 .imagen-aviso{
     width: 90%;
     padding: 20% 5%;
+}
+
+.imagen-aviso img{
+    width: 100%;
 }
 
 .mensaje-aviso{
@@ -191,4 +205,93 @@ main{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     color: #0A3871;
+}
+
+
+/*Modificación para tablet*/
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    .titulo{
+       padding: 0 10%;
+       font-size: 35px;
+       text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .parte-principal{
+        width: 100%;
+        padding-bottom: 8.4%;
+    }
+
+    .logo{
+        width: 10%;
+    }
+    .ingresar-texto textarea{
+        width: 100%;
+        font-size: 30px;
+    }
+    .texto-encriptado{
+        width: 76%;
+        margin: 0 12%;
+        height: max-content;
+    }
+
+    .imagen-aviso {
+        display:none
+    }
+
+    #bloque-resultado-mensaje{
+        height: min-content;
+        padding-top: 4%;
+    }
+
+    #resultado-mensaje{
+        font-size: 30px;
+    }
+    .copiar{
+        margin-bottom: 2%;
+    }
+    #boton-copiar{
+        margin-top: 4%;
+        padding: 1%;
+    }
+
+    .mensaje-copiado{
+        padding: 1% 1% 1% 29%;
+    }
+
+    .copyright{
+        width: 80%;
+        margin-top: 4%;
+        padding: 0 20% 0 30%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .titulo{
+        padding: 0 8% 0 12%;
+        font-size: 32px
+    }
+
+    .ingresar-texto textarea, #bloque-resultado-mensaje{
+        font-size:25px;
+    }
+
+    #boton-copiar{
+        height: 5vh;
+    }
+    .mensaje-copiado{
+        font-size: 14px;
+        padding: 0 15%;
+        margin-top: 2%;
+    }
+    .copyright{
+        padding: 0 13%;
+    }
 }
